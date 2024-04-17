@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/action_profile"
+    android:title="Профиль"
+    android:icon="@drawable/baseline_person_24"
+    />
+    <item
+        android:id="@+id/action_orders"
+        android:title="Мои машины"
+        android:icon="@drawable/baseline_car_rental_24"
+        />
+    <item
+        android:id="@+id/action_rent"
+        android:title="Аренда машин"
+        android:icon="@drawable/baseline_directions_car_24"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:title="Настройки"
+        android:icon="@drawable/baseline_settings_24"
+        />
+</menu>
