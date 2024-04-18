@@ -6,35 +6,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MenuActvity extends AppCompatActivity {
 
+    private LinearLayout newLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_actvity);
+        newLayout = findViewById(R.layout.new_layout);
+        newLayout.setVisibility(View.VISIBLE);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_menu);
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener(){
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        if (item.getItemId() == R.id.action_profile)
+                            return true;
+
+                        return false;
+                    }
+                }
+        );
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        final int itemId = item.getItemId();
-        switch (itemId){
-            case R.id.action_profile:
-                return true;
-            case  R.id.action_orders:
-                return true;
-            case R.id.action_rent:
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
