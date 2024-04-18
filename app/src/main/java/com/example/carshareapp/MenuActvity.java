@@ -11,16 +11,20 @@ import android.widget.LinearLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MenuActvity extends AppCompatActivity {
-    LinearLayout profileLayout = findViewById(R.id.profile_layout_id);
-    LinearLayout settingsLayout = findViewById(R.id.settings_id);
-    LinearLayout carLayout = findViewById(R.id.car_layout_id);
-    LinearLayout mycCarLayout = findViewById(R.id.mycar_id);
+    LinearLayout profileLayout;
+    LinearLayout settingsLayout;
+    LinearLayout carLayout;
+    LinearLayout mycCarLayout ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_actvity);
-        carLayout.setVisibility(View.VISIBLE);
+        profileLayout = findViewById(R.id.profile_layout_id);
+        settingsLayout = findViewById(R.id.settings_id);
+        carLayout = findViewById(R.id.car_layout_id);
+        mycCarLayout = findViewById(R.id.mycar_id);
+        carLayout.setVisibility(View.GONE);
         settingsLayout.setVisibility(View.GONE);
         profileLayout.setVisibility(View.GONE);
         mycCarLayout.setVisibility(View.GONE);

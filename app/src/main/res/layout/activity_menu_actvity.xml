@@ -49,7 +49,45 @@
            android:layout_height="wrap_content"
            android:text="Читать далее"
            android:layout_gravity="end"/>
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/profile_layout_id"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+       </LinearLayout>
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/settings_id"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HELlo"
+                android:textSize="40sp"
+                />
+       </LinearLayout>
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/car_layout_id"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+
+       </LinearLayout>
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:id="@+id/mycar_id"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="match_parent">
+
+
+       </LinearLayout>
    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
