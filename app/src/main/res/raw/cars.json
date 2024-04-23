@@ -1,0 +1,25 @@
+{
+  "cars": [
+    {
+      "name": "Машина 1",
+      "price": "10000",
+      "color": "Синий",
+      "image_url": "https://example.com/car1.jpg",
+      "button_link": "https://example.com/car1"
+    },
+    {
+      "name": "Машина 2",
+      "price": "15000",
+      "color": "Красный",
+      "image_url": "https://example.com/car2.jpg",
+      "button_link": "https://example.com/car2"
+    },
+    {
+      "name": "Машина 3",
+      "price": "12000",
+      "color": "Зеленый",
+      "image_url": "https://example.com/car3.jpg",
+      "button_link": "https://example.com/car3"
+    }
+  ]
+}
